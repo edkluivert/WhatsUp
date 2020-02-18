@@ -6,7 +6,7 @@ WhatsUp is a chat app that has all the features of the original app(Whatsapp).
 ### Tools i will be using are
 
 1. Android studio
-2.Git
+2. Git
 
 ### Libraries and thirdparties
 
