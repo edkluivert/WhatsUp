@@ -14,12 +14,14 @@ class SplashScreen : AppCompatActivity() {
     private val SPLASH_DELAY: Long = 3000
 
 
-    /*override fun onWindowFocusChanged(hasFocus: Boolean) {
+
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if (hasFocus) hideSystemUI()
-    }*/
+    }
 
-    /*private fun hideSystemUI() {
+    private fun hideSystemUI() {
 
         window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_IMMERSIVE
                 or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -27,15 +29,19 @@ class SplashScreen : AppCompatActivity() {
                 or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                 or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 or View.SYSTEM_UI_FLAG_FULLSCREEN)
-    }*/
+    }
 
 
 
 
     internal val mRunnable: Runnable = Runnable {
-        val intent = Intent(applicationContext, PhoneAuth::class.java)
-        startActivity(intent)
-        finish()
+        if (!isFinishing) {
+
+            val intent = Intent(applicationContext, PhoneAuth::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish()
+        }
     }
 
 
@@ -43,17 +49,19 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_IMMERSIVE
-                or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                or View.SYSTEM_UI_FLAG_FULLSCREEN)
-
         mDelayHandler = Handler()
+
         mDelayHandler!!.postDelayed(mRunnable, SPLASH_DELAY)
 
     }
 
+    public override fun onDestroy() {
+
+        if (mDelayHandler != null) {
+            mDelayHandler!!.removeCallbacks(mRunnable)
+        }
+
+        super.onDestroy()
+    }
 
 }
