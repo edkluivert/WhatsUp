@@ -3,18 +3,18 @@ WhatsUp is a complete whatsapp clone made with fully kotlin
 
 WhatsUp is a chat app that has all the features of the original app(Whatsapp).
 
-*Tools i will be using are*
+###Tools i will be using are
 
 1. Android studio
 2.Git
 
-*Libraries and thirdparties*
+###Libraries and thirdparties
 
 1. Firebase Firestore
 2. Room db
 3. CircleImageView
 
-*Architecture*
+###Architecture###
  MVVM
  
  Here is a screenshot of the splash screen so far
