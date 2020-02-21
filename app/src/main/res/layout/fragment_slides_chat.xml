@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidebackground"
+    tools:context=".fragments.SlidesChatFrag">
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/chatslideillustration"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <com.kluivert.whatsup.Fonts.QuicksandMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/slidetextone"
+        android:textSize="@dimen/slidemaintextsize"
+        />
+
+
+    <com.kluivert.whatsup.Fonts.QuicksandRegular
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/slidetextonee"
+        android:textSize="@dimen/slidesectextsize"
+        />
+
+</FrameLayout>

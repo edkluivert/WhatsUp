@@ -10,4 +10,5 @@
     <string name="devname">Kluivert</string>
     <string name="phonetextone">Let\'s get started</string>
     <string name="send">Send</string>
+    <string name="done">Done</string>
 </resources>
