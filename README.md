@@ -14,10 +14,13 @@ WhatsUp is a chat app that has all the features of the original app(Whatsapp).
 2. Room db
 3. CircleImageView
 
-### Architecture
- MVVM
+### Software Architectural Pattern
+
+ 1. MVVM
  
- Here is a screenshot of the splash screen so far
+ 
+ 
+ Here is a screenshot of the app so far
  
  ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/WhatsUpSplash.png)
  
