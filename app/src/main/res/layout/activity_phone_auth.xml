@@ -12,10 +12,84 @@
 
 
     <RelativeLayout
-      android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/phoneauthillustration"
+            />
 
 
+        <com.kluivert.whatsup.Fonts.QuicksandMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:text="@string/phonetextone"
+            android:textSize="@dimen/phonetextone"
+
+            />
+
+        <com.kluivert.whatsup.Fonts.QuicksandMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="370dp"
+            android:text="A verification code will be sent to your phone number"
+            android:textSize="@dimen/phonetextwo"
+
+            />
+
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <com.kluivert.whatsup.Fonts.QuickEditText
+            android:layout_marginStart="90dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/phoneautheditbox"
+
+            android:layout_marginTop="420dp"
+            android:hint="phone number"
+            android:textAlignment="center"
+
+            />
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="550dp"
+           android:layout_centerHorizontal="true"
+           app:cardBackgroundColor="@color/colorPrimary"
+           app:cardCornerRadius="10dp"
+           >
+
+           <com.kluivert.whatsup.Fonts.QuicksandMedium
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="@string/send"
+               android:textSize="@dimen/phonetextone"
+               android:textColor="@color/white"
+
+               />
+
+       </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 

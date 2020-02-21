@@ -8,4 +8,6 @@
     <string name="slidetextonee">Chat with your close friends, work buddies and family easily through your mobile device with very little internet connection</string>
     <string name="slidetexttwo">Show your friends what you are up to</string>
     <string name="devname">Kluivert</string>
+    <string name="phonetextone">Let\'s get started</string>
+    <string name="send">Send</string>
 </resources>

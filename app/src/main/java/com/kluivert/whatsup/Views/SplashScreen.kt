@@ -64,4 +64,6 @@ class SplashScreen : AppCompatActivity() {
         super.onDestroy()
     }
 
+
+
 }
