@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">WhatsUp</string>
     <string name="from">From</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slidetextone">Chat with friends</string>
+    <string name="slidetextonee">Chat with your close friends, work buddies and family easily through your mobile device with very little internet connection</string>
+    <string name="slidetexttwo">Show your friends what you are up to</string>
+    <string name="devname">Kluivert</string>
 </resources>
