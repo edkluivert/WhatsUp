@@ -21,9 +21,8 @@ WhatsUp is a chat app that has all the features of the original app(Whatsapp).
  
  ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/WhatsUpSplash.png)
  
- and the Phone auth
- 
- ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/phone%20auth.png)
+
+ The intro slides
  
  ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/introne.png)
  
@@ -32,7 +31,10 @@ WhatsUp is a chat app that has all the features of the original app(Whatsapp).
  ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/introthree.png)
  
  
+  And the Phone auth screen
+ 
+ ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/phone%20auth.png)
  
  
  
- Do pardon the Ui, there will be changes for sure.
+
