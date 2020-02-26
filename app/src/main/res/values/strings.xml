@@ -11,4 +11,7 @@
     <string name="phonetextone">Let\'s get started</string>
     <string name="send">Send</string>
     <string name="done">Done</string>
+    <string name="veristring">A verification code will be sent to your phone number</string>
+    <string name="terms">Terms and Conditions apply</string>
+    <string name="phone_number">Phone number</string>
 </resources>

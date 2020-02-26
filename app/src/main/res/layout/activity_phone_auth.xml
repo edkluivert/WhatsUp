@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
     >
     
     <data>
         <variable
-            name="PhoneViewModel"
+            name="phoneviewmodel"
             type="com.kluivert.whatsup.viewModel.PhoneViewModel" />
     </data>
 
@@ -19,10 +19,11 @@
         >
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:contentDescription="@string/app_name"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/phoneauthillustration"
             />
 
@@ -31,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="330dp"
+            android:layout_marginTop="280dp"
             android:text="@string/phonetextone"
             android:textSize="@dimen/phonetextone"
 
@@ -41,35 +42,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="370dp"
-            android:text="A verification code will be sent to your phone number"
+            android:layout_marginTop="310dp"
+            android:text="@string/veristring"
             android:textSize="@dimen/phonetextwo"
 
             />
 
-
-        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
-            android:id="@+id/ccp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
-            android:layout_marginStart="10dp"
-            />
-
-        <com.kluivert.whatsup.Fonts.QuickEditText
-            android:layout_marginStart="90dp"
-            android:layout_width="250dp"
+        <RelativeLayout
+            android:layout_width="130dp"
             android:layout_height="50dp"
             android:background="@drawable/phoneautheditbox"
+            android:layout_marginTop="360dp"
+            android:layout_centerHorizontal="true"
+            >
 
-            android:layout_marginTop="420dp"
-            android:hint="phone number"
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <com.kluivert.whatsup.Fonts.QuickEditText
+            android:text="@={phoneviewmodel.phnumber}"
+           android:layout_centerHorizontal="true"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="@string/phone_number"
             android:textAlignment="center"
-
+            android:layout_marginTop="430dp"
+            android:background="@drawable/phoneautheditbox"
             />
+
 
 
        <androidx.cardview.widget.CardView
+           android:onClick="@{phoneviewmodel::onRegisterNum}"
            android:layout_width="150dp"
            android:layout_height="50dp"
            android:layout_marginTop="550dp"
@@ -90,6 +104,18 @@
                />
 
        </androidx.cardview.widget.CardView>
+
+
+        <com.kluivert.whatsup.Fonts.QuicksandRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/terms"
+            android:textSize="@dimen/phonetextwo"
+            android:textColor="@color/colorPrimaryDark"
+            />
 
     </RelativeLayout>
 
