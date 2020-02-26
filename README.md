@@ -14,15 +14,30 @@ WhatsUp is a chat app that has all the features of the original app(Whatsapp).
 2. Room db
 3. CircleImageView
 
-### Architecture
- MVVM
+### Software Architectural Pattern
+
+ 1. MVVM
  
- Here is a screenshot of the splash screen so far
+ 
+ 
+ Here is a screenshot of the app so far
  
  ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/WhatsUpSplash.png)
  
- and the Phone auth
+
+ The intro slides
  
- ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/Android%20-%201.png)
+ ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/introne.png)
  
- Do pardon the Ui, there will be changes for sure.
+ ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/introtwo.png)
+ 
+ ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/introthree.png)
+ 
+ 
+  And the Phone auth screen
+ 
+ ![alt text](https://github.com/Tristankluivert/WhatsUp/blob/master/Screenshots/phone%20auth.png)
+ 
+ 
+ 
+
