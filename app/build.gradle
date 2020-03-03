@@ -57,21 +57,31 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //Kodein Dependency Injection
+    implementation "org.kodein.di:kodein-di-generic-jvm:6.2.1"
+    implementation "org.kodein.di:kodein-di-framework-android-x:6.2.1"
 
-    // viewModel
+    // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    // Lifecycles only (without viewModel or LiveData)
+    // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 
-    // Saved state module for viewModel
+    // Saved state module for ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
 
-    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
-
-    // Annotation processor
+    // alternately - if using Java8, use the following instead of lifecycle-compiler
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    // optional - helpers for implementing LifecycleOwner in a Service
+    implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+
 
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:$arch_version"

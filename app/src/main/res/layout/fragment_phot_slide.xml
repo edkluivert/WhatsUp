@@ -15,7 +15,7 @@
         />
 
 
-    <com.kluivert.whatsup.Fonts.QuicksandMedium
+    <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="380dp"
@@ -25,7 +25,7 @@
         />
 
 
-    <com.kluivert.whatsup.Fonts.QuicksandRegular
+    <com.kluivert.whatsup.Helper.fonts.QuicksandRegular
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="420dp"

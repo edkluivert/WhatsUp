@@ -1,4 +1,4 @@
-package com.kluivert.whatsup.Fonts
+package com.kluivert.whatsup.Helper.fonts
 
 import android.content.Context
 import android.graphics.Typeface

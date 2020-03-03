@@ -6,7 +6,7 @@
     android:background="@drawable/splashback"
     tools:context=".Views.MainActivity">
 
-    <com.kluivert.whatsup.Fonts.QuicksandMedium
+    <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,7 +19,7 @@
 
 
 
-    <com.kluivert.whatsup.Fonts.QuicksandMedium
+    <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/from"
@@ -28,7 +28,7 @@
 
         />
 
-    <com.kluivert.whatsup.Fonts.QuicksandMedium
+    <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/devname"

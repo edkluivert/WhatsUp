@@ -1,4 +1,4 @@
-package com.kluivert.whatsup.Fonts
+package com.kluivert.whatsup.Helper.fonts
 
 import android.annotation.SuppressLint
 import android.content.Context

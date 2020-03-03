@@ -1,4 +1,4 @@
-package com.kluivert.whatsup.utils
+package com.kluivert.whatsup.Helper
 
 import android.content.Context
 import android.graphics.Color
