@@ -11,12 +11,9 @@ WhatsUp is a chat app that has all the features of the original app(Whatsapp).
 ### Libraries and thirdparties
 
 1. Firebase Firestore
-2. Room db
-3. CircleImageView
+2. CircleImageView
 
-### Software Architectural Pattern
 
- 1. MVVM
  
  
  
