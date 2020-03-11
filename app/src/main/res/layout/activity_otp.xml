@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/phoneauthillustration"
+        />
+
+
+    <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="A code was sent to"
+        android:textSize="@dimen/phonetextone"
+
+        />
+
+
+
+
+
+    <com.kluivert.whatsup.Helper.fonts.QuickEditText
+        android:id="@+id/edcode"
+        android:layout_centerHorizontal="true"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_otp"
+        android:textAlignment="center"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/phoneautheditbox"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardotp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="480dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="10dp"
+        >
+
+        <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/veriotp"
+            android:textSize="@dimen/phonetextone"
+            android:textColor="@color/white"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.kluivert.whatsup.Helper.fonts.QuicksandRegular
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/time"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/phonetextone"
+        />
+
+    <com.kluivert.whatsup.Helper.fonts.QuicksandRegular
+        android:id="@+id/tvresend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:text="Didn't receive it? Resend"
+        android:textSize="@dimen/phonetextone"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+</RelativeLayout>

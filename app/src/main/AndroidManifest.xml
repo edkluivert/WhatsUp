@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kluivert.whatsup">
 
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.SlideActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            ></activity>
-        <activity android:name=".Views.PhoneAuth"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+        <activity android:name=".Views.OtpActivity"></activity>
+        <activity
+            android:name=".Views.SlideActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Views.PhoneAuth"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Views.SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">

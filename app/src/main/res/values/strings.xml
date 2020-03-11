@@ -14,4 +14,7 @@
     <string name="veristring">A verification code will be sent to your phone number</string>
     <string name="terms">Terms and Conditions apply</string>
     <string name="phone_number">Phone number</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="veriotp">Verify</string>
+    <string name="time">Time</string>
 </resources>

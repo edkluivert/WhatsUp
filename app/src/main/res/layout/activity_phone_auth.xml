@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-
-    >
-    
-    <data>
-        <variable
-            name="phoneviewmodel"
-            type="com.kluivert.whatsup.viewModel.PhoneViewModel" />
-    </data>
-
-
     <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
@@ -70,7 +61,7 @@
 
 
         <com.kluivert.whatsup.Helper.fonts.QuickEditText
-            android:text="@={phoneviewmodel.phnumber}"
+            android:id="@+id/edphone"
            android:layout_centerHorizontal="true"
             android:layout_width="280dp"
             android:layout_height="50dp"
@@ -83,7 +74,7 @@
 
 
        <androidx.cardview.widget.CardView
-           android:onClick="@{phoneviewmodel::onRegisterNum}"
+           android:id="@+id/cardverify"
            android:layout_width="150dp"
            android:layout_height="50dp"
            android:layout_marginTop="550dp"
@@ -118,5 +109,3 @@
             />
 
     </RelativeLayout>
-
-</layout>
