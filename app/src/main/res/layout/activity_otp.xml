@@ -82,14 +82,27 @@
         android:textSize="@dimen/phonetextone"
         />
 
+
+
+    <com.kluivert.whatsup.Helper.fonts.QuicksandRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:text="Didn't receive it?"
+        android:textSize="@dimen/phonetextone"
+        android:textColor="@color/colorPrimary"
+        />
+
     <com.kluivert.whatsup.Helper.fonts.QuicksandRegular
         android:id="@+id/tvresend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="230dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="100dp"
-        android:text="Didn't receive it? Resend"
+        android:text="Resend"
         android:textSize="@dimen/phonetextone"
         android:textColor="@color/colorPrimaryDark"
         />

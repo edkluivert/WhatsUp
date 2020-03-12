@@ -25,7 +25,7 @@ object ProgressDialogUtil {
         params.gravity = Gravity.CENTER
         linearLayout.layoutParams = params
 
-        val progressBar = ProgressBar(context)
+        var progressBar = ProgressBar(context)
         progressBar.isIndeterminate = true
         progressBar.setPadding(0, 0, padding, 0)
         progressBar.layoutParams = params
@@ -59,4 +59,6 @@ object ProgressDialogUtil {
         }
         return dialog
     }
+
+
 }

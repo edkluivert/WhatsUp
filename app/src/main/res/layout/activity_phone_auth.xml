@@ -38,6 +38,18 @@
             android:textSize="@dimen/phonetextwo"
 
             />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progbar"
+        android:layout_width='100dp'
+        android:layout_height="100dp"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:visibility="visible"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        app:mpb_progressStyle="circular"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
 
         <RelativeLayout
             android:layout_width="150dp"
