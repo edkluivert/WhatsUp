@@ -20,6 +20,7 @@
 
 
     <com.kluivert.whatsup.Helper.fonts.QuicksandMedium
+        android:id="@+id/receivenum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

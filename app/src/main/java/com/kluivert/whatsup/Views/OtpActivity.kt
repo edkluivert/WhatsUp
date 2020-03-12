@@ -15,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import com.kluivert.whatsup.Helper.fonts.QuickEditText
+import com.kluivert.whatsup.Helper.fonts.QuicksandMedium
 import com.kluivert.whatsup.Helper.fonts.QuicksandRegular
 import com.kluivert.whatsup.Helper.toast
 import com.kluivert.whatsup.R
@@ -27,6 +28,7 @@ class OtpActivity : AppCompatActivity() {
     lateinit var edcode : QuickEditText
     lateinit var tvtime : QuicksandRegular
     lateinit var tvresend : QuicksandRegular
+    lateinit var receivenum : QuicksandMedium
     lateinit var cardotp : CardView
     lateinit var firebaseAuth: FirebaseAuth
     private var storedVerificationId: String? = ""
@@ -44,6 +46,13 @@ class OtpActivity : AppCompatActivity() {
         cardotp = findViewById(R.id.cardotp)
         tvresend = findViewById(R.id.tvresend)
         tvtime = findViewById(R.id.tvtime)
+        receivenum = findViewById(R.id.receivenum)
+
+
+
+        var intent = getIntent()
+        var strnum = intent.getStringExtra("phone")
+        receivenum.text = strnum
 
         val minute:Long = 1000 * 60
         val millisInFuture:Long = (minute * 0) + (minute * 0) + (1000 * 50)
@@ -59,12 +68,16 @@ class OtpActivity : AppCompatActivity() {
             isCancelled = false
 
 
+          tvresend.setOnClickListener {
 
+              resendCode()
 
+          }
 
+      cardotp.setOnClickListener {
 
-
-
+          verifyCode()
+      }
 
 
 }
@@ -105,6 +118,8 @@ class OtpActivity : AppCompatActivity() {
 
     fun resendCode(){
 
+        verificationcallbacks()
+
         var strphone: String? = null
 
             PhoneAuthProvider.getInstance().verifyPhoneNumber(
@@ -117,20 +132,11 @@ class OtpActivity : AppCompatActivity() {
     }
 
 
-    fun verifyNum(){
+    fun verifyCode(){
 
-        verificationcallbacks()
 
         val strphone = edcode.text.toString()
 
-        if (strphone.isNullOrEmpty()){
-            edcode.setError("Please enter your phone number")
-            edcode.requestFocus()
-            return
-        }else{
-
-
-        }
 
 
 
